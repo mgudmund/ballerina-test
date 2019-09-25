@@ -6,6 +6,8 @@ jobs:
   build:
     container:
         image: ballerina/ballerina:latest
+        volumes:
+        - my_docker_volume:/volume_mount
     runs-on: ubuntu-latest
     
     steps:
