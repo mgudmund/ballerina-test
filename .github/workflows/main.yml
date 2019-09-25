@@ -12,6 +12,8 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+    - name: Run a multi-line script
+      run: whoami
     - name: Build
       run: ballerina build *.bal
     - name: Run a multi-line script
