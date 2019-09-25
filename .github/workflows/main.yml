@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
     container:
-        image: ballerina:latest
+        image: ballerina/ballerina:latest
     runs-on: ubuntu-latest
     
     steps:
