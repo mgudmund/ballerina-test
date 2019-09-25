@@ -15,6 +15,18 @@ jobs:
     - name: Run a multi-line script
       run: pwd 
     - name: Build
-      run:  ballerina build *.bal
+      run:  ls
     - name: Run a multi-line script
       run: ls -la
+  test:
+    container:
+        image: ballerina/ballerina:latest
+        volumes:
+        - my_docker_volume:/volume_mount
+    runs-on: ubuntu-latest
+    
+    steps:
+    
+    - name: Run a multi-line script
+      run: pwd 
+    
