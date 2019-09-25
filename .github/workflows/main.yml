@@ -13,8 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run a multi-line script
-      run: whoami
+      run: ls -la 
     - name: Build
-      run: ballerina build *.bal
+      run: sudo ballerina build *.bal
     - name: Run a multi-line script
       run: ls -la
