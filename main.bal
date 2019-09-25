@@ -1,5 +1,6 @@
 import ballerina/http;
 import ballerina/log;
+
 service hello on new http:Listener(9090) {
 
     resource function sayHello(http:Caller caller, http:Request req) {
@@ -7,7 +8,7 @@ service hello on new http:Listener(9090) {
         var result = caller->respond("Hello, World!");
 
         if (result is error) {
-            log:printError("Error sending response", result);
+            log:printError("Error") ;
         }
     }
 }
