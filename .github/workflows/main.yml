@@ -24,6 +24,7 @@ jobs:
         volumes:
         - my_docker_volume:/volume_mount
     runs-on: ubuntu-latest
+    needs: build
     
     steps:
     
