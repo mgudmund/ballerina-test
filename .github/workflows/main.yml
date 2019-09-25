@@ -13,6 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build
-      run: ballerina build src/*.bal
+      run: ballerina build *.bal
     - name: Run a multi-line script
       run: ls -la
