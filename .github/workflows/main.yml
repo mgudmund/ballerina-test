@@ -23,7 +23,7 @@ jobs:
           env: 
             BALLERINA_CENTRAL_ACCESS_TOKEN = ${{ secrets.BallerinaCentralToken }}
           args: 
-            "push -a"      
+            push       
         
        
   
