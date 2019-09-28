@@ -15,7 +15,7 @@ jobs:
         uses: ballerina-platform/github-actions/cli/latest@master
         with:
           args: 
-            build -a
+            ["build","-a"]
 
       - name: Ballerina Push
         uses: ballerina-platform/github-actions/cli/latest@master
