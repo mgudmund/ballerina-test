@@ -16,5 +16,6 @@ jobs:
     - name: Run a multi-line script
       run: ls -la
     - uses: docker://ballerina/ballerina:latest
-      run: pwd 
+      with: 
+        ballerina build 
   
