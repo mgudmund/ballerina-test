@@ -15,8 +15,6 @@ jobs:
         uses: docker://ballerina/ballerina:latest
         with:
           args: 
-             pwd
-             ls -la
              touch a
              
    
