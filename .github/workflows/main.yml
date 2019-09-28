@@ -14,16 +14,14 @@ jobs:
       - name: Ballerina Build
         uses: ballerina-platform/github-actions/cli/latest@master
         with:
-          args: 
-            ["build","-a"]
+          args: build -a
 
       - name: Ballerina Push
         uses: ballerina-platform/github-actions/cli/latest@master
         with:
           env: 
             BALLERINA_CENTRAL_ACCESS_TOKEN = ${{ secrets.BallerinaCentralToken }}
-          args: 
-            push -a    
+          args: push -a    
         
        
   
