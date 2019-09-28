@@ -1,4 +1,4 @@
-name: CI
+name: Ballerina example
 
 on: [push]
 
@@ -11,12 +11,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
     
-      - name: Build
+      - name: Ballerina Build
         uses: ballerina-platform/github-actions/cli/latest@master
         with:
           args: 
             build
-             
-   
+
+      - name: Ballerina Push
+        uses: ballerina-platform/github-actions/cli/latest@master
+        with:
+          env: 
+            BALLERINA_CENTRAL_ACCESS_TOKEN = "Ballerina Central Access Token"
+          args: 
+            push       
+        
        
   
