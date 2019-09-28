@@ -9,12 +9,12 @@ jobs:
     
     steps:
       - name: Checkout
-          uses: actions/checkout@v1
+        uses: actions/checkout@v1
     
       - name: Build
-          uses: docker://ballerina/ballerina:latest
-          args: 
-              ballerina build 
+        uses: docker://ballerina/ballerina:latest
+        args: 
+             ballerina build 
    
        
   
