@@ -8,14 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v1
-    - name: Run a multi-line script
-      run: pwd 
-    - name: Build
-      run:  ls
-    - name: Run a multi-line script
-      run: ls -la
-    - uses: docker://ballerina/ballerina:latest
-      with: 
-        ballerina build 
+      - name: Checkout
+          uses: actions/checkout@v1
+    
+      - name: Build
+          uses: docker://ballerina/ballerina:latest
+          args: 
+              ballerina build 
+   
+       
   
