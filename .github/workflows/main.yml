@@ -21,7 +21,7 @@ jobs:
         uses: ballerina-platform/github-actions/cli/latest@master
         with:
           env: 
-            BALLERINA_CENTRAL_ACCESS_TOKEN = ${{ secrets.BallerinaToken }}
+            BALLERINA_CENTRAL_ACCESS_TOKEN = ${{ secrets.BallerinaCentralToken }}
           args: 
             "push main"      
         
