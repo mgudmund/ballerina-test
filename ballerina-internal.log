@@ -1,0 +1,31 @@
+[2019-09-28 21:22:13,239] SEVERE {b7a.log.crash} - java.lang.NullPointerException 
+org.ballerinalang.util.exceptions.BallerinaException: java.lang.NullPointerException
+	at org.ballerinalang.testerina.core.BTestRunner.lambda$processProgramFile$6(BTestRunner.java:316)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.ballerinalang.testerina.core.BTestRunner.processProgramFile(BTestRunner.java:308)
+	at org.ballerinalang.testerina.core.BTestRunner.lambda$buildSuites$4(BTestRunner.java:285)
+	at java.util.HashMap.forEach(HashMap.java:1289)
+	at org.ballerinalang.testerina.core.BTestRunner.buildSuites(BTestRunner.java:273)
+	at org.ballerinalang.testerina.core.BTestRunner.runTest(BTestRunner.java:156)
+	at org.ballerinalang.testerina.util.TesterinaUtils.executeTests(TesterinaUtils.java:132)
+	at org.ballerinalang.packerina.task.RunTestsTask.execute(RunTestsTask.java:81)
+	at org.ballerinalang.packerina.TaskExecutor.executeTasks(TaskExecutor.java:38)
+	at org.ballerinalang.packerina.cmd.BuildCommand.execute(BuildCommand.java:395)
+	at java.util.Optional.ifPresent(Optional.java:159)
+	at org.ballerinalang.tool.Main.main(Main.java:59)
+Caused by: java.lang.NullPointerException
+	at sun.net.util.URLUtil.urlNoFragString(URLUtil.java:50)
+	at sun.misc.URLClassPath.getLoader(URLClassPath.java:522)
+	at sun.misc.URLClassPath.getNextLoader(URLClassPath.java:494)
+	at sun.misc.URLClassPath.getResource(URLClassPath.java:248)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.ballerinalang.testerina.util.TestarinaClassLoader.loadClass(TestarinaClassLoader.java:67)
+	at org.ballerinalang.testerina.core.BTestRunner.packageProcessed(BTestRunner.java:380)
+	at org.ballerinalang.testerina.core.BTestRunner.lambda$processProgramFile$6(BTestRunner.java:311)
+	... 12 more
+ 
