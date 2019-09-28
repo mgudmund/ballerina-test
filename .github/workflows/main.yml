@@ -15,7 +15,8 @@ jobs:
         uses: docker://ballerina/ballerina:latest
         with:
           args: 
-             ballerina build 
+             pwd
+             
    
        
   
