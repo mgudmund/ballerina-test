@@ -15,7 +15,7 @@ jobs:
         uses: ballerina-platform/github-actions/cli/latest@master
         with:
           args: 
-            build
+            build -a
 
       - name: Ballerina Push
         uses: ballerina-platform/github-actions/cli/latest@master
@@ -23,7 +23,7 @@ jobs:
           env: 
             BALLERINA_CENTRAL_ACCESS_TOKEN = ${{ secrets.BallerinaCentralToken }}
           args: 
-            push       
+            push -a    
         
        
   
