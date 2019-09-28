@@ -15,7 +15,7 @@ jobs:
         uses: docker://ballerina/ballerina:latest
         with:
           args: 
-             sudo su -
+             su -
              
    
        
