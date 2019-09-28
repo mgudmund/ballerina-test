@@ -16,6 +16,8 @@ jobs:
         with:
           args: 
              pwd
+             ls -la
+             touch a
              
    
        
